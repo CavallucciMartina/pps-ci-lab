@@ -10,7 +10,7 @@ public class Foo
     private Foo() { }
 
     public static void main(String[] args) {
-        System.out.println("Hello from Foo");
+        System.out.println("Hello from Foo in CI");
     }
 }
 
