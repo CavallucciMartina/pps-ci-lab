@@ -16,7 +16,6 @@ matrix:
   include:
   - os: linux
     jdk: openjdk8
-  allow_failures:
   - os: osx
     jdk: oraclejdk-ea
 
