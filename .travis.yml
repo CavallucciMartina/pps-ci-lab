@@ -21,3 +21,6 @@ matrix:
 
 script:
   - ./gradlew clean build
+
+test:
+  - ./gradlew test
