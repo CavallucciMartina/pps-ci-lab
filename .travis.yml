@@ -4,10 +4,21 @@ install: true
 os:
   - linux
   - osx
-  #- windows (nahh)
 
-dist: trusty
-jdk: oraclejdk8
+jdk:
+  - openjdk9
+  - openjdk10
+  - openjdk11
+  - openjdk-ea
+  - oraclejdk-ea
+
+matrix:
+  include:
+  - os: linux
+    jdk: openjdk8
+  allow_failures:
+  - os: osx
+    jdk: oraclejdk-ea
 
 script:
   - ./gradlew clean build
