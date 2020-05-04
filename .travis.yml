@@ -1,7 +1,11 @@
 language: java
 install: true
 
-os: linux
+os:
+  - linux
+  - osx
+  #- windows (nahh)
+
 dist: trusty
 jdk: oraclejdk8
 
