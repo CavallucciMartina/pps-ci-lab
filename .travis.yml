@@ -1,3 +1,23 @@
 language: java
+install: true
+
+os:
+  - linux
+  - osx
+
+jdk:
+  - openjdk9
+  - openjdk10
+  - openjdk11
+  - openjdk-ea
+  - oraclejdk-ea
+
+matrix:
+  include:
+  - os: linux
+    jdk: openjdk8
+  - os: osx
+    jdk: oraclejdk-ea
+
 script:
-- './gradlew clean build'
+  - ./gradlew clean build
